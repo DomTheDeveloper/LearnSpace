@@ -1,0 +1,244 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Space Learning System</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="solarsystem.js"></script>
+</head>
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <div id="navbar">
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+      <h1>The Space Learning System<br><span>by <a class="lecs" href="https://orgsync.com/97903/chapter" target="_blank">The League of Engineers and Computer Scientists</a></span></h1>
+      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+    </div>
+    <div id="data">
+      <a class="About active" title="About" href="#About" onclick="$('#lblContent_About').fadeIn(); $('#lblContent_Team').hide();">About</a>
+      <a class="download" title="download" href="#download">Download</a>
+      <a class="team" title="team" href="#team" onclick="$('#lblContent_About').hide(); $('#lblContent_Team').fadeIn();">The Team</a>
+	  <br />
+	  <br/>
+	  
+	  <div class="divContent" style="height:70px;">
+	  <span class="lblContent" ID="lblContent_About">
+	 <b style="font-weight:bold !important;">The Space Learning System</b> is an application for the augmented reality headset, Meta.<br />
+	 This allows its users to navigate through the solar system by reaching out and grabbing the artificially augmented planets, while the interface displays facts about the selected planets.
+	 It is based on the concept of using new cutting-edge technology to explore the beauty of outer space, and is beneficial to anyone interested in the wonders of the space around us.
+	</span>
+	
+	<span class="lblContent" ID="lblContent_Team">
+	Our team consists of students solely from Oakland University, all members of LECS. <br />
+	The undergraduate students were successfully able to develop an interactive space exploring learning tool
+	by manipulating reality in front of the user's eyes.
+	
+	<br />
+	<div style="align:center" align="center">
+<table style="align:center" ID="tblLecsTeam">
+
+<tr><td colwidth="6"><br /></td></tr>
+
+<tr>
+
+<td>
+	<a href="mailto:dadabish@oakland.edu">
+	<img class = "img-circle" src="images/ddhead.png" width="125px" height="125px"></img>
+	</a>
+	<br />
+	</td>
+
+<td align="center">
+	<a href="mailto:ikgappy@oakland.edu">
+	<img class = "img-circle" src="images/ighead.png" width="125px" height="125px"></img>
+	</a>
+	<br />
+</td>
+	
+	
+<td>
+	<a href="mailto:tagnass@oakland.edu">
+	<img class = "img-circle" src="images/tghead.png" width="125px" height="125px"></img>
+	</a>
+	<br />
+	</td>
+	
+	<td>
+	<a href="mailto:anknopper@oakland.edu">
+	<img class = "img-circle" src="images/akhead.png" width="125px" height="125px"></img>
+	</a>
+	<br />
+	
+	</td>
+	
+	<td>
+	<a href="mailto:akalisa@oakland.edu">
+	<img class = "img-circle" src="images/aahead.png" width="125px" height="125px"></img>
+	</a>
+	<br />
+	
+	</td>
+	
+	
+	<td>
+	<a href="mailto:asrughani@oakland.edu">
+	<img class = "img-circle" src="images/arhead.png" width="125px" height="125px"></img>
+	</a>
+	<br>
+	
+	</td>
+	
+	</tr>
+	<tr class="center">
+	<td><span class="fullname">Dominic Dabish</span></td>
+	<td><span class="fullname">Ivan Gappy</span></td>
+	<td><span class="fullname">Tyler Gnass</span></td>
+	<td><span class="fullname">Aurora Knopper</span></td>
+	<td><span class="fullname">Andrew Alisa</span></td>
+	<td><span class="fullname">Arpan Rughani</span></td>
+	
+	</table>
+	<br />
+	</div>
+	
+	
+	</span>
+	</div>
+	
+</br>
+</br>
+	
+		<script>
+		$('#lblContent_Team').hide();
+	</script>
+	
+	</div>
+    <div id="controls">
+      <label class="set-view">
+        <input type="checkbox">
+      </label>
+      <label class="set-zoom">
+        <input type="checkbox">
+      </label>
+      <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Speed</span>
+      </label>
+      <label>
+        <input type="radio" class="set-size" name="scale">
+        <span>Size</span>
+      </label>
+      <label>
+        <input type="radio" class="set-distance" name="scale">
+        <span>Distance</span>
+      </label>
+    </div>
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mercury</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Venus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Earth</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mars</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Jupiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>Saturn</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Uranus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Neptune</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Sun</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+  </html>
