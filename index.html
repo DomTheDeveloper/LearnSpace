@@ -14,10 +14,11 @@
       <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
     </div>
     <div id="data">
-      <a class="About active" title="About" href="#About" onclick="$('#lblContent_About').fadeIn(); $('#lblContent_Team').hide();">About</a>
+      <a class="About active" title="About" href="#About" onclick="$('#lblContent_About').fadeIn(); $('#lblContent_Team').hide();  $('#lblContent_Video').hide();">About</a>
       <a class="download" title="download" href="SpaceLearning.zip" onclick="window.open('SpaceLearning.zip')" >Download</a>
-	  <a class="download" title="download" href="https://www.youtube.com/watch?v=JN4DB9Reff4" onclick="window.open('https://www.youtube.com/watch?v=JN4DB9Reff4')">Video</a>
-      <a class="team" title="team" href="#team" onclick="$('#lblContent_About').hide(); $('#lblContent_Team').fadeIn();">The Team</a>
+	  <a class="video" title="video" href="#video" onclick="$('#lblContent_About').hide();  $('#lblContent_Video').fadeIn(); $('#lblContent_Team').hide();">Video</a>
+	  
+      <a class="team" title="team" href="#team" onclick="$('#lblContent_About').hide();  $('#lblContent_Video').hide(); $('#lblContent_Team').fadeIn();">The Team</a>
 	  <br />
 	  <br/>
 	  
@@ -26,6 +27,10 @@
 	 <b style="font-weight:bold !important;">The Space Learning System</b> is an application for the augmented reality headset, Meta.<br />
 	 This allows its users to navigate through the solar system by reaching out and grabbing the artificially augmented planets, while the interface displays facts about the selected planets.
 	 It is based on the concept of using new cutting-edge technology to explore the beauty of outer space, and is beneficial to anyone interested in the wonders of the space around us.
+	</span>
+	
+	<span class="lblContent ID="lblContent_Video">
+	<iframe width="560" height="315" src="//www.youtube.com/embed/JN4DB9Reff4" frameborder="0" allowfullscreen></iframe>
 	</span>
 	
 	<span class="lblContent" ID="lblContent_Team">
