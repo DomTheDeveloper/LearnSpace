@@ -10,8 +10,19 @@
 </script>
 
 <script type="text/javascript">
+function breakout_of_frame()
+{
+  // see http://www.thesitewizard.com/archive/framebreak.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+}
+
   <!--
   if (screen.width <= 800) {
+  breakout_of_frame();
     window.location = "http://mhacksv.challengepost.com/submissions/31792-space-learning-system";
   }
   //-->
